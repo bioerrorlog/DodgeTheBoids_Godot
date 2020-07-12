@@ -18,3 +18,7 @@ func _ready():
 		
 	if OS.get_name()=="HTML5":
 		OS.set_window_maximized(true)
+
+func _process(delta):
+	for boid in boids_container.get_children():
+		boid.set_prey_position($Prey.position)
