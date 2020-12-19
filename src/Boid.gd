@@ -16,17 +16,17 @@ var cohesion_force = 0.5
 var seperation_force = 1.0
 var avoidance_force = 30.0
 var centralization_force = 0.5
-var prey_position: Vector2 = Vector2(0, 0)
+var prey_position: Vector2 = Vector2()
 
 export (Array, Color) var colors
 
 func _ready():
 	randomize()
-	position = Vector2(rand_range(-800, 800), rand_range(-600, -200))
+	position = Vector2(rand_range(-800, 800), rand_range(-600, -200)) + get_viewport_rect().size / 2 
+	prey_position = get_viewport_rect().size / 2 
 	velocity = Vector2(rand_range(-1, 1), rand_range(-1, 1)).normalized() * move_speed
 	modulate = colors[rand_range(0, colors.size())]
-
-
+	
 func _process(delta):
 	var neighbors = get_neighbors(perception_radius)
 	
@@ -34,7 +34,7 @@ func _process(delta):
 	acceleration += process_cohesion(neighbors) * cohesion_force
 	acceleration += process_seperation(neighbors) * seperation_force
 	acceleration += process_centralization(prey_position) * centralization_force
-
+	
 	if is_obsticle_ahead():
 		acceleration += process_obsticle_avoidance() * avoidance_force
 		
@@ -45,8 +45,8 @@ func _process(delta):
 	translate(velocity * delta)
 
 
-func set_prey_position(position: Vector2):
-	prey_position = position
+func set_prey_position(pos: Vector2):
+	prey_position = pos
 	
 func process_centralization(centor: Vector2):
 	if position.distance_to(centor) < centralization_force_radius:

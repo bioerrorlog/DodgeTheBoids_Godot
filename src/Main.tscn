@@ -9,18 +9,20 @@
 script = ExtResource( 2 )
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 0, -50 )
-scale = Vector2( 2.2, 2 )
+scale = Vector2( 1.598, 1.353 )
 texture = ExtResource( 1 )
+centered = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
 current = true
-zoom = Vector2( 2, 2 )
 smoothing_enabled = true
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
+visible = false
 
 [node name="Prey" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 3.99438, -742.978 )
 
 [node name="Obstacles" type="Node2D" parent="."]
