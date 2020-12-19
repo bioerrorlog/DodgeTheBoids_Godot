@@ -1,7 +1,7 @@
 extends Area2D
 
 var screen_size
-export var speed = 800
+export var speed = 400
 
 func _ready():
 	screen_size = get_viewport_rect().size
