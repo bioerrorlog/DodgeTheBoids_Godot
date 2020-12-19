@@ -23,8 +23,25 @@ func _ready():
 #	for boid in boids_container.get_children():
 #		boid.set_prey_position($Prey.position)
 
-func _input(event):
-	if event is InputEventMouseButton and event.pressed:
-		for boid in boids_container.get_children():
-			boid.set_prey_position(event.position)
+#func _input(event):
+#	if event is InputEventMouseMotion:
+#		for boid in boids_container.get_children():
+#			boid.set_prey_position(event.position)
+##	if event.is_action_pressed("ui_right"):
+##		player.go_right()
 
+
+#	if event is InputEventMouseButton and event.pressed:
+#		for boid in boids_container.get_children():
+#			boid.set_prey_position(event.position)
+#			print('Mouse Pressed')
+#func _input(event):
+#   # Mouse in viewport coordinates.
+#   if event is InputEventMouseButton:
+#	   print("Mouse Click/Unclick at: ", event.position)
+##   elif event is InputEventMouseMotion:
+##	   print("Mouse Motion at: ", event.position)
+#
+#   # Print the size of the viewport.
+##   print("Viewport Resolution is: ", get_viewport_rect().size)
+#   print("Viewport get_mouse_position is: ", get_viewport().get_mouse_position())
