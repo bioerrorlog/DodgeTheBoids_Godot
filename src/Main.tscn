@@ -23,26 +23,4 @@ position = Vector2( 990, 1000 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 3 )
 
-[node name="Obstacles" type="Node2D" parent="."]
-visible = false
-
-[node name="Obstacle1" type="StaticBody2D" parent="Obstacles"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstacles/Obstacle1"]
-polygon = PoolVector2Array( 1319.84, 96.4771, 1231.96, 272.235, 1263.92, 368.103, 1132.1, 575.817, 1080.17, 767.553, 1000.28, 947.306, 1032.24, 1143.04, 996.288, 1350.75, 1064.19, 1614.39, 1563.51, 1606.4, 1515.57, 60.5266 )
-disabled = true
-
-[node name="Obstacle2" type="StaticBody2D" parent="Obstacles"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstacles/Obstacle2"]
-polygon = PoolVector2Array( -1212.88, -854.664, -1129.97, -656.387, -1180.44, -429.27, -1259.75, -313.908, -1212.88, -126.446, -1284.98, 75.4358, -1191.25, 316.973, -1205.67, 562.116, -924.48, 774.813, -509.9, 1110.08, -614.733, 1490.03, -1213.91, 1569.92, -1581.4, 1050.64, -1637.33, 211.79, -1721.21, -678.984, -1653.3, -1226.23, -1489.53, -1298.13 )
-disabled = true
-
-[node name="Obstacle3" type="StaticBody2D" parent="Obstacles"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstacles/Obstacle3"]
-polygon = PoolVector2Array( -341.171, 263.034, -37.6903, 105.142, 243.234, 137.951, 450.34, 275.337, 520.058, 535.757, 421.632, 644.436, 218.628, 716.205, -164.824, 693.649, -363.727, 574.717, -408.839, 398.37 )
-disabled = true
-one_way_collision = true
-
 [node name="Boids" type="Node2D" parent="."]
