@@ -5,7 +5,7 @@ export var speed = 400
 
 func _ready():
 	screen_size = get_viewport_rect().size
-	position = Vector2(screen_size.x / 2, screen_size.y/6*5)
+	position = Vector2(screen_size.x / 2, -screen_size.y*2)
 
 
 func _process(delta):
@@ -17,5 +17,5 @@ func _process(delta):
 
 	position += velocity * delta
 	position.x = clamp(position.x, 0, screen_size.x)
-	position.y = clamp(position.y, 0, screen_size.y)
+	position.y = clamp(position.y, -100000000, screen_size.y)
 	

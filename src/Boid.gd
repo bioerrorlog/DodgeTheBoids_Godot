@@ -27,7 +27,7 @@ func _ready():
 	prey_position = get_viewport_rect().size / 2 
 	velocity = Vector2(rand_range(-1, 1), rand_range(-1, 1)).normalized() * move_speed
 	modulate = colors[rand_range(0, colors.size())]
-	move_speed = rand_range(300, 900)
+	move_speed = rand_range(400, 900)
 	
 func _process(delta):
 	set_prey_position(player.position)

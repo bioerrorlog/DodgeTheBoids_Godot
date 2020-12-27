@@ -1,0 +1,402 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/environment/background/background.png" type="Texture" id=1]
+[ext_resource path="res://assets/environment/background/midori.png" type="Texture" id=2]
+[ext_resource path="res://assets/environment/background/rock_1.png" type="Texture" id=3]
+[ext_resource path="res://assets/environment/background/water.png" type="Texture" id=4]
+[ext_resource path="res://assets/environment/background/star.png" type="Texture" id=5]
+[ext_resource path="res://assets/environment/background/cherry.png" type="Texture" id=6]
+[ext_resource path="res://assets/environment/background/peal.png" type="Texture" id=7]
+[ext_resource path="res://assets/environment/background/light.png" type="Texture" id=8]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+z_index = 2
+
+[node name="rock" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1.7041, 529.276 )
+scale = Vector2( 0.932427, 1.18671 )
+texture = ExtResource( 3 )
+
+[node name="rock2" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 300.78, 1308.46 )
+rotation = -0.752127
+scale = Vector2( 0.932427, 1.15089 )
+texture = ExtResource( 3 )
+
+[node name="rock3" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( -85.1045, -509.289 )
+rotation = 0.0413262
+scale = Vector2( 1.39263, 1.15089 )
+texture = ExtResource( 3 )
+
+[node name="rock4" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( -109.378, -1700.44 )
+rotation = -0.0510094
+scale = Vector2( 1.92541, 1.44255 )
+texture = ExtResource( 3 )
+
+[node name="rock5" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( -203.348, -3241.44 )
+rotation = -3.2497
+scale = Vector2( 2.24743, 2.2297 )
+texture = ExtResource( 3 )
+
+[node name="rock10" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1969.23, 293.875 )
+scale = Vector2( 0.932427, 1.18671 )
+texture = ExtResource( 3 )
+
+[node name="rock9" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1828.67, 1312.4 )
+rotation = 0.173844
+scale = Vector2( 0.932427, 1.15089 )
+texture = ExtResource( 3 )
+
+[node name="rock8" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 2032.06, -784.262 )
+rotation = 0.0413262
+scale = Vector2( 1.39263, 1.23272 )
+texture = ExtResource( 3 )
+
+[node name="rock7" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 2035.15, -1935.84 )
+rotation = -0.0510094
+scale = Vector2( 1.92541, 1.44255 )
+texture = ExtResource( 3 )
+
+[node name="rock6" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 2247.53, -3474.39 )
+rotation = -3.0131
+scale = Vector2( 2.24743, 2.2297 )
+texture = ExtResource( 3 )
+
+[node name="midori" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 162.734, 222.356 )
+rotation = 1.92213
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori2" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 132.816, 663.141 )
+rotation = 7.68359
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori3" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 196.641, 932.399 )
+rotation = 7.07424
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori4" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1750.36, 872.563 )
+rotation = 5.15419
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori5" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1810.19, 334.048 )
+rotation = 4.34743
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori6" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1798.28, -910.46 )
+rotation = 4.74959
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori11" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1798.71, -1431.49 )
+rotation = 4.4021
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori9" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1807.08, -64.9093 )
+rotation = 4.86495
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori8" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 1768.7, -1931.42 )
+rotation = 4.26118
+scale = Vector2( 0.423006, 0.423006 )
+texture = ExtResource( 2 )
+
+[node name="midori12" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 161.738, -1278.68 )
+rotation = 1.67196
+scale = Vector2( 0.423006, 0.423006 )
+texture = ExtResource( 2 )
+
+[node name="midori7" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 142.908, -687.163 )
+rotation = 1.97002
+scale = Vector2( 0.552502, 0.552502 )
+texture = ExtResource( 2 )
+
+[node name="midori10" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 99.7381, -2391.33 )
+rotation = 1.48704
+scale = Vector2( 0.432678, 0.432678 )
+texture = ExtResource( 2 )
+
+[node name="water" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 922.96, 1140.3 )
+scale = Vector2( 1.28693, 1 )
+texture = ExtResource( 4 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+z_index = 1
+motion_scale = Vector2( 1, 0.8 )
+
+[node name="star" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1364.7, -94.1213 )
+scale = Vector2( 0.621202, 0.621202 )
+texture = ExtResource( 5 )
+
+[node name="star17" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1380.9, -669.254 )
+rotation = -0.551739
+scale = Vector2( 0.621202, 0.621202 )
+texture = ExtResource( 5 )
+
+[node name="star18" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 578.957, -215.628 )
+rotation = -0.551739
+scale = Vector2( 0.621202, 0.621202 )
+texture = ExtResource( 5 )
+
+[node name="star27" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1155.4, -1027.5 )
+rotation = -0.520772
+scale = Vector2( 0.621202, 0.621202 )
+texture = ExtResource( 5 )
+
+[node name="star25" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 412.079, -1081.13 )
+rotation = -1.07251
+scale = Vector2( 0.621202, 0.621202 )
+texture = ExtResource( 5 )
+
+[node name="star2" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1622.07, 36.4985 )
+rotation = -0.286423
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star3" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1364.88, 139.779 )
+rotation = -0.336471
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star7" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 743.165, 324.065 )
+rotation = -0.0678339
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star8" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1611.94, 228.885 )
+rotation = -2.38296
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star16" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1628.14, -346.248 )
+rotation = -2.9347
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star19" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1048.33, -293.538 )
+rotation = -2.9347
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star24" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1608.34, -1180.63 )
+rotation = -3.45547
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star23" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1314.2, -1654.01 )
+rotation = -3.45547
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star20" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 993.968, 91.9074 )
+rotation = -2.9347
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star9" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 240.937, 500.25 )
+rotation = -2.38296
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star10" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1520.81, 490.124 )
+rotation = -2.38296
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star11" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 986.179, 370.643 )
+rotation = -1.60181
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star12" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 555.809, 558.923 )
+rotation = -1.60181
+scale = Vector2( 0.324675, 0.324675 )
+texture = ExtResource( 5 )
+
+[node name="star28" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 428.686, 802.917 )
+rotation = -1.98439
+scale = Vector2( 0.272191, 0.272191 )
+texture = ExtResource( 5 )
+
+[node name="star29" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1316.81, 593.613 )
+rotation = -1.98439
+scale = Vector2( 0.272191, 0.272191 )
+texture = ExtResource( 5 )
+
+[node name="star13" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 1519.76, 730.908 )
+rotation = -1.60181
+scale = Vector2( 0.294167, 0.294167 )
+texture = ExtResource( 5 )
+
+[node name="star4" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 635.834, 48.6492 )
+rotation = -0.360102
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star5" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 280.872, 33.9122 )
+rotation = -0.808608
+scale = Vector2( 0.544715, 0.544715 )
+texture = ExtResource( 5 )
+
+[node name="star15" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 652.035, -526.484 )
+rotation = -0.911841
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star14" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 297.073, -541.221 )
+rotation = -1.36035
+scale = Vector2( 0.544715, 0.544715 )
+texture = ExtResource( 5 )
+
+[node name="star22" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 521.927, -1739.88 )
+rotation = -1.43261
+scale = Vector2( 0.439087, 0.439087 )
+texture = ExtResource( 5 )
+
+[node name="star6" type="Sprite" parent="ParallaxLayer2"]
+position = Vector2( 491.484, 210.097 )
+rotation = -0.615123
+scale = Vector2( 0.544715, 0.544715 )
+texture = ExtResource( 5 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 1, 0.6 )
+
+[node name="cherry" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 911.347, -299.586 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry2" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 1256.25, -153.569 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry3" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 1306.6, 2.51761 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry4" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 944.075, 151.052 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry5" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 1049.81, -57.9033 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry6" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 689.804, 186.297 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry7" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 1145.48, 186.297 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry8" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 1336.81, 299.586 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry9" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 989.391, 337.349 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry10" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 818.198, 309.657 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry11" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 649.524, 354.972 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="cherry12" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 672.182, -55.3856 )
+scale = Vector2( 0.27553, 0.27553 )
+texture = ExtResource( 6 )
+
+[node name="peal" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 991.026, 616.504 )
+scale = Vector2( 0.536186, 0.455019 )
+texture = ExtResource( 7 )
+
+[node name="water2" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 922.96, 918.303 )
+scale = Vector2( 1.28693, 1 )
+texture = ExtResource( 4 )
+
+[node name="light" type="Sprite" parent="ParallaxLayer3"]
+position = Vector2( 966.022, -48.1161 )
+z_index = 2
+texture = ExtResource( 8 )
