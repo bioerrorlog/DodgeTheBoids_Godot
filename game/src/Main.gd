@@ -17,3 +17,8 @@ func _ready():
 		
 	if OS.get_name()=="HTML5":
 		OS.set_window_maximized(true)
+
+
+func _on_Player_hit():
+	$Player.decrease_hit_point(1)
+	$HUD.update_hp($Player.hit_point)

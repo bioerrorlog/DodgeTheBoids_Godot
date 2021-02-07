@@ -4,11 +4,11 @@ signal hit
 
 var screen_size
 export var speed = 400
+var hit_point = 10
 
 func _ready():
 	screen_size = get_viewport_rect().size
 	position = Vector2(screen_size.x / 2, 0)
-	print("Hi!")
 
 
 func _process(delta):
@@ -23,14 +23,10 @@ func _process(delta):
 	position.y = clamp(position.y, -100000000, screen_size.y)
 
 
-#func _on_Player_body_entered(body):
-#	print("BODY ENTERD")
-##	hide()
-##	emit_signal("hit")
-##	$CollisionShape2D.set_deferred("disabled", true)
+func decrease_hit_point(damage_point):
+	hit_point -= damage_point
 
-var hit_count = 0
+
 func _on_Player_area_entered(area):
-	hit_count += 1
-	print("AREA ENTERD: %s" % hit_count)
+	emit_signal("hit")
 	
