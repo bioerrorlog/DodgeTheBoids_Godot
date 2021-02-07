@@ -1,6 +1,6 @@
 extends Node2D
 
-const BOIDS_COUNT = 100
+const BOIDS_COUNT = 10
 
 onready var boid_scene = preload("res://src/Boid.tscn")
 

@@ -9,7 +9,6 @@ script = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 scale = Vector2( 0.5, 0.5 )
-gravity = 0.0
 
 [node name="Boids" type="Node2D" parent="."]
 

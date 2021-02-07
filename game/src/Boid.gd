@@ -23,7 +23,7 @@ export (Array, Color) var colors
 
 func _ready():
 	randomize()
-	position = Vector2(rand_range(-800, 800), rand_range(-600, -200)) + get_viewport_rect().size / 2 
+	position = Vector2(rand_range(-800, 800), rand_range(-1600, -1200)) + get_viewport_rect().size / 2 
 	prey_position = get_viewport_rect().size / 2 
 	velocity = Vector2(rand_range(-1, 1), rand_range(-1, 1)).normalized() * move_speed
 	modulate = colors[rand_range(0, colors.size())]
