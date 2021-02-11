@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="RestInAbyss"
+config/name="Dodge the Boids"
 run/main_scene="res://src/Main.tscn"
 config/icon="res://icon.png"
 
