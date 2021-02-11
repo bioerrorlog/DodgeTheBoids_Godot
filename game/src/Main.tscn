@@ -9,6 +9,7 @@
 script = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
+visible = false
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Boids" type="Node2D" parent="."]
@@ -17,3 +18,4 @@ scale = Vector2( 0.5, 0.5 )
 
 [node name="HUD" parent="." instance=ExtResource( 1 )]
 [connection signal="hit" from="Player" to="." method="_on_Player_hit"]
+[connection signal="start_game" from="HUD" to="." method="_on_HUD_start_game"]
