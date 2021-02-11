@@ -22,7 +22,7 @@ func _process(delta):
 
 func birth_boids(boids_count):
 	for i in boids_count:
-		var boid = boid_scene.instance()
+		var boid = boid_scene.instance().init($Player.position.x, $Player.position.y)
 		$Boids.add_child(boid)
 		boids.push_back(boid)
 	
@@ -33,6 +33,7 @@ func birth_boids(boids_count):
 func game_over():
 	$Player.game_over()
 	$HUD.game_over()
+	$BoidsTimer.stop()
 	is_game_live = false
 
 
@@ -56,3 +57,8 @@ func _on_HUD_start_game():
 	$HUD.update_hp($Player.hit_point)
 	is_game_live = true
 	birth_boids(10)
+	$BoidsTimer.start()
+
+
+func _on_BoidsTimer_timeout():
+	birth_boids(1)
