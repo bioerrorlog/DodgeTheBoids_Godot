@@ -53,6 +53,15 @@ func game_over():
 	is_live = false
 
 
+func blink_sprite_color(sec):
+	$Sprite.modulate = Color(1, 0, 0) # red shade
+	$HitTimer.start(sec)
+
+
 func _on_Player_area_entered(area):
+	blink_sprite_color(0.2)
 	emit_signal("hit")
-	
+
+
+func _on_HitTimer_timeout():
+	$Sprite.modulate = Color(1, 1, 1)

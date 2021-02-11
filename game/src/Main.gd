@@ -16,7 +16,7 @@ func _process(delta):
 		score += 100 * delta
 		$HUD.update_score(score)
 	
-	if $Player.hit_point <= 0:
+	if $Player.hit_point <= 0 and is_game_live:
 		game_over()
 
 
@@ -44,6 +44,7 @@ func remove_all_boids():
 
 func _on_Player_hit():
 	$Player.decrease_hit_point(1)
+	$HUD.blink_HpLabel_color(0.2)
 	$HUD.update_hp($Player.hit_point)
 
 
@@ -52,5 +53,6 @@ func _on_HUD_start_game():
 	score = 0
 	$HUD.update_score(score)
 	$Player.game_start()
+	$HUD.update_hp($Player.hit_point)
 	is_game_live = true
 	birth_boids(10)

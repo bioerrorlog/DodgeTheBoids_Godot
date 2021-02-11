@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/HUD.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://src/ScoreLabel.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -42,9 +43,12 @@ custom_fonts/font = SubResource( 1 )
 text = "Score: 0"
 align = 1
 valign = 1
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="BlinkTimer" type="Timer" parent="ScoreLabel"]
 
 [node name="MessageLabel" type="Label" parent="."]
 anchor_top = 0.5
@@ -70,4 +74,8 @@ text = "Start"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="HitTimer" type="Timer" parent="."]
+[connection signal="timeout" from="ScoreLabel/BlinkTimer" to="ScoreLabel" method="_on_BlinkTimer_timeout"]
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="timeout" from="HitTimer" to="." method="_on_HitTimer_timeout"]
