@@ -7,7 +7,7 @@ func update_hp(hp):
 	
 
 func update_score(score):
-	$ScoreLabel.text = "Score: %s" % int(score)
+	$ScoreLabel.text = "%s boids" % int(score)
 
 
 func blink_HpLabel_color(sec):

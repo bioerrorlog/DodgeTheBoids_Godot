@@ -12,9 +12,6 @@ func _ready():
 		OS.set_window_maximized(true)
 
 func _process(delta):
-	if is_game_live:
-		score += 100 * delta
-		$HUD.update_score(score)
 	
 	if $Player.hit_point <= 0 and is_game_live:
 		game_over()
@@ -28,6 +25,9 @@ func birth_boids(boids_count):
 	
 	for boid in $Boids.get_children():
 		boid.boids = boids
+		
+	score += boids_count
+	$HUD.update_score(score)
 		
 		
 func game_over():
@@ -52,7 +52,6 @@ func _on_Player_hit():
 func _on_HUD_start_game():
 	remove_all_boids()
 	score = 0
-	$HUD.update_score(score)
 	$Player.game_start()
 	$HUD.update_hp($Player.hit_point)
 	is_game_live = true
