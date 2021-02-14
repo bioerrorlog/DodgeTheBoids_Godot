@@ -1,4 +1,8 @@
-# RestInAbyss
-My gamedev project by Godot Engine
+# DodgeTheBoids
+My game made with Godot Engine.  
+Avoid from "Boids" - Artificial Life which simulates the flocking behaviour.
 
-![screenshot](https://raw.githubusercontent.com/bioerrorlog/RestInAbyss_Godot/master/screenshots/rest_in_abyss_20201227.png)
+PLAY HERE: https://bioerrorlog.itch.io/dodge-the-boids
+
+YouTube Demo:
+[![game demo movie](./screenshots/youtube_cover.png)](https://youtu.be/hWMEfzxuFGc)
